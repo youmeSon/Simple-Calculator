@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Simple Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href=https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/ad9207ddf0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="main-title my-4">
+                <h1 class="text-center">
+                    <i class="fas fa-calculator"></i>
+                    Simple Calculator
+                </h1>
+            </div>
+            <div class="form-div">
+                <form id="calculator">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Enter the First Number..." id="first-number-input" >
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control" placeholder="Enter the Second Number..." id="second-number-input" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="calculator-option" id="multiplication" checked >
+                        <label for="multiple" class="calculator-option-input">
+                            multiplication
+                            <i class="fas fa-times"></i>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="calculator-option" id="division" >
+                        <label for="division" class="calculator-option-input">
+                            division
+                            <i class="fas fa-divide"></i>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="calculator-option" id="addition" >
+                        <label for="plus" class="calculator-option-input">
+                            addition
+                            <i class="fas fa-plus"></i>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="calculator-option" id="subtraction" >
+                        <label for="minus" class="calculator-option-input">
+                            subtraction
+                            <i class="fas fa-minus"></i>
+                        </label>
+                    </div>
+                    <div class="calbutton-div text-center">
+                        <button type="submit" class="btn cute"> Calculate </button>
+
+                    </div>
+                </form>
+                <hr class="zig-zag" />
+            </div>
+            <div class="result-div text-center">
+                <h2>
+                    <i class="fas fa-heart"></i>
+                    Result: <span id="calculator-results"></span>
+                </h2>
+
+            </div>
+        </div>
+        
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
