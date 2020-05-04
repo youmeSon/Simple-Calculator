@@ -5,7 +5,7 @@ function division(firstNumber, secondNumber) {
     return firstNumber / secondNumber;
 }
 function addition(firstNumber, secondNumber) {
-    return parseInt(firstNumber) + parseInt(secondNumber);
+    return parseFloat(firstNumber) + parseFloat(secondNumber);
 }
 function subtraction(firstNumber, secondNumber) {
     return firstNumber - secondNumber;
