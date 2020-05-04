@@ -11,6 +11,13 @@ function subtraction(firstNumber, secondNumber) {
     return firstNumber - secondNumber;
 }
 
+function generateRandomColor() {
+
+    let rand1 = Math.floor((Math.random() * 255) + 1);
+    let rand2 = Math.floor((Math.random() * 255) + 1);
+    let rand3 = Math.floor((Math.random() * 255) + 1);
+    return `rgb(${rand1}, ${rand2}, ${rand3})`;
+}
 
 document.addEventListener('submit', e => {
     e.preventDefault();
@@ -29,5 +36,9 @@ document.addEventListener('submit', e => {
     document.querySelector('#calculator-results').innerText = calAmount;
     document.querySelector('#first-number-input').value = null;
     document.querySelector('#second-number-input').value = null;
+
+    let color = generateRandomColor();
+
+    document.body.style.backgroundColor = color;
 } )
 
